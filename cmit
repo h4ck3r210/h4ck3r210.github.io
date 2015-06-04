@@ -1,0 +1,11 @@
+#echo Changing git repo..
+#git remote remove origin
+#git remote add origin git@192.168.0.113:/home/git/repositories/rsrisk.git
+#echo ---------OK!------------
+git add *
+git status
+echo ------------------------
+git commit -m "$1"
+git push origin master
+echo ------------------------
+git status
